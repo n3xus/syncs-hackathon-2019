@@ -1,0 +1,147 @@
+<div class="row" *ngIf="property">
+  <!-- Column -->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <form (ngSubmit)="submit()">
+          <div class="form-body">
+            <h5 class="card-title">Post your space</h5>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label">First Name</label>
+                  <input type="text" id="firstName" name="firstName" class="form-control" placeholder="First Name"
+                         [(ngModel)]="owner.firstName"></div>
+              </div>
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Last Name"
+                         [(ngModel)]="owner.lastName"></div>
+              </div>
+              <!--/span-->
+            </div>
+            <!--/row-->
+            <!--/row-->
+            <div class="row">
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <p><label class="control-label">Phone Number</label></p>
+                  <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number"
+                         [(ngModel)]="owner.phone"></div>
+              </div>
+              <!--/span-->
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="control-label">Size</label>
+                  <div>
+                    <div class="btn-group btn-group-toggle" ngbRadioGroup name="radioBasic" [(ngModel)]="property.size">
+                      <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" value="Small">Small
+                      </label>
+                      <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" value="Medium"> Medium
+                      </label>
+                      <label ngbButtonLabel class="btn-primary">
+                        <input ngbButton type="radio" value="Large">Large
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+            </div>
+            <!--/row-->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Price</label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">
+                          <i class="ti-money"></i>
+                      </span>
+                    </div>
+                    <input id="price" name="price" type="text" class="form-control" placeholder="price"
+                           aria-label="price"
+                           aria-describedby="basic-addon1" [(ngModel)]="property.price">
+                  </div>
+                </div>
+              </div>
+              <!--/span-->
+            </div>
+            <h5 class="card-title m-t-40">Property Description</h5>
+            <div class="row">
+              <div class="col-md-12 ">
+                <div class="form-group">
+                  <textarea id="description" name="description" class="form-control" rows="4"
+                            [(ngModel)]="property.description">Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. but the majority have suffered alteration in some form, by injected humour</textarea>
+                </div>
+              </div>
+            </div>
+            <!--/row-->
+            <div class="row">
+              <!--/span-->
+              <div class="col-md-3">
+                <h5 class="card-title m-t-20">Upload Image</h5>
+                <div class="el-element-overlay">
+                  <div class="el-card-item">
+                    <div class="el-card-avatar el-overlay-1">
+                      <img src="assets/images/gallery/chair3.jpg" alt="user"/>
+                      <div class="el-overlay">
+                        <ul class="list-style-none el-info">
+                          <li class="el-item">
+                            <a class="btn default btn-outline image-popup-vertical-fit el-link"
+                               href="assets/images/gallery/chair3.jpg">
+                              <i class="icon-magnifier"></i>
+                            </a>
+                          </li>
+                          <li class="el-item">
+                            <a class="btn default btn-outline el-link" href="javascript:void(0);">
+                              <i class="icon-link"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn btn-info waves-effect waves-light">
+                  <span>Upload Another Image</span>
+                  <input type="file" class="upload"></div>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="form-actions m-t-40">
+            <button type="submit" class="btn btn-default" [disabled]="loading">Submit</button>
+            &nbsp;
+            <button (click)="cancel()" class="btn btn-default" [disabled]="loading">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Column -->
+</div>
+<ng-template #content let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div>
+      <p>
+        Success!
+      </p>
+    </div>
+  </div>
+  <div class="modal-footer">
+
+  </div>
+</ng-template>
