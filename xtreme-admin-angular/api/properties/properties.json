@@ -1,0 +1,97 @@
+[
+  {
+    "propertyId": 1,
+    "location": "Sydney, NSW, Australia",
+    "description": "Leaf rake with 48-inch wooden handle.",
+    "price": 19.95,
+    "starRating": 3.2,
+    "imageUrl": "assets/images/properties/p1.jpg",
+    "owner": {
+      "userId": 1,
+      "location": "Sydney, NSW, Australia",
+      "firstName": "Freddie",
+      "lastName": "Butcher",
+      "photoUrl": "assets/images/users/1.png",
+      "phone": "0431 85 5436",
+      "description": "I'm wholesome home owner with super high rating",
+      "password": "",
+      "rating": 3.5
+    }
+  },
+  {
+    "propertyId": 2,
+    "location": "Garden Cart",
+    "description": "15 gallon capacity rolling garden cart",
+    "price": 32.99,
+    "starRating": 4.2,
+    "imageUrl": "assets/images/properties/p2.jpg",
+    "owner": {
+      "userId": 2,
+      "location": "Sydney, NSW, Australia",
+      "firstName": "Ennie",
+      "lastName": "Butcher",
+      "photoUrl": "assets/images/users/2.png",
+      "phone": "0431 85 5436",
+      "description": "I'm wholesome home owner with super high rating",
+      "password": "",
+      "rating": 2
+    }
+  },
+  {
+    "propertyId": 8,
+    "location": "Sydney, NSW, Australia",
+    "description": "15-inch steel blade hand saw",
+    "price": 11.55,
+    "starRating": 3.7,
+    "imageUrl": "assets/images/properties/p4.jpg",
+    "owner": {
+      "userId": 5,
+      "location": "Sydney, NSW, Australia",
+      "firstName": "Alfred",
+      "lastName": "Butcher",
+      "photoUrl": "assets/images/users/5.jpg",
+      "phone": "0431 85 5436",
+      "description": "I'm wholesome home owner with super high rating",
+      "password": "",
+      "rating": 3.5
+    }
+  },
+  {
+    "propertyId": 10,
+    "location": "Sydney, NSW, Australia",
+    "description": "Standard two-button video game controller",
+    "price": 35.95,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/properties/p5.jpg",
+    "owner": {
+      "userId": 4,
+      "location": "Sydney, NSW, Australia",
+      "firstName": "Amy",
+      "lastName": "Butcher",
+      "photoUrl": "assets/images/users/4.jpg",
+      "phone": "0431 85 5436",
+      "description": "I'm wholesome home owner with super high rating",
+      "password": "",
+      "rating": 5
+    }
+  },
+  {
+    "propertyId": 11,
+    "location": "Brisbane, QLD, Australia",
+    "description": "Standard two-button video game controller",
+    "price": 35.95,
+    "starRating": 4.6,
+    "imageUrl": "assets/images/properties/p6.jpg",
+    "owner": {
+      "userId": 2,
+      "location": "Sydney, NSW, Australia",
+      "firstName": "Ennie",
+      "lastName": "Butcher",
+      "photoUrl": "assets/images/users/2.png",
+      "phone": "0431 85 5436",
+      "description": "I'm wholesome home owner with super high rating",
+      "password": "",
+      "rating": 2
+    }
+  }
+]
